@@ -1,0 +1,14 @@
+body{
+      background-color: black;
+}
+
+body div{
+    color: aliceblue;
+}
+
+body .bun :hover{
+    font-size: 15px;
+    color: gray;
+}
+
+

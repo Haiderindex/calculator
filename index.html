@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <label align="center" border="2">
+   <div class="ur"> 
+  <h1 >calculator</h1>
+  value 1: <input type="number" id="num1">
+  <br>
+  <br>
+  value 2: <input type="number" id="num2">
+</div>
+  <br>
+  <br>
+  <div class="bun">
+  <button onclick="sum()">plus</button>
+  <br>
+  <button onclick="minus()">minus</button>
+  <br>
+  <button onclick="multiplay()">multiplay</button>
+  <br>
+  <button onclick="divied()">divied</button>
+</div>
+<br>
+<br>
+  <div id="result" align="center"> result </div>
+  <script>
+    function sum() {
+      let sum1 = Number(document.getElementById("num1").value);
+      let sum2 = Number(document.getElementById("num2").value);
+      document.getElementById("result").innerText = sum1 + sum2
+    }
+
+    function minus() {
+      let sum1 = Number(document.getElementById("num1").value);
+      let sum2 = Number(document.getElementById("num2").value);
+      document.getElementById("result").innerText = sum1 - sum2
+    }
+
+    function multiplay() {
+      let sum1 = Number(document.getElementById("num1").value);
+      let sum2 = Number(document.getElementById("num2").value);
+      document.getElementById("result").innerText = sum1 * sum2
+    }
+
+    function divied() {
+      let sum1 = Number(document.getElementById("num1").value);
+      let sum2 = Number(document.getElementById("num2").value);
+      document.getElementById("result").innerText = sum1 / sum2
+    }
+
+  </script>
+     </label>
+
+</body>
+
+</html>
